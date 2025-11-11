@@ -6,7 +6,8 @@
   <title>Miguel Dev</title>
 <link rel="stylesheet" href="" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
+
   
   
   <style>
@@ -139,50 +140,72 @@ body {
   border-radius: 10px;
   padding: 2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+ }
  
-
-}
-
-
-.projects2 {
+ 
+ .projects2 {
   background: white;
-  padding: 4rem 2rem;
+  padding: 3rem 1.5rem;
   text-align: center;
-
 }
 
+/* GRID no desktop */
 .project-grid2 {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
   margin-top: 2rem;
- overflow:auto;
-
 }
 
+/* Cards */
 .project-card2 {
   background: var(--light);
   border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-margin:5px;
-
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  flex: 0 0 80%; /* usado no mobile */
 }
 
 .project-card2:hover {
-
-color: var(--light);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-
-background: var(--text);
-  
-
-
-
-
+  background: var(--text);
+  color: var(--light);
+  transform: translateY(-4px);
 }
 
-button:active{
+/* Imagem */
+.project-card2 img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* --- MOBILE MAGIC --- */
+@media (max-width: 768px) {
+  .project-grid2 {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .project-card2 {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+  }
+
+  /* Remove barra de scroll feia */
+  .project-grid2::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+ 
+ 
+ button:active{
 
 background:purple;
 
@@ -282,7 +305,8 @@ color:black;
          Também conhecido como "Ice Kid" sou um rapaz que gosta de ensinar conteúdos de TI para os outros. Por isso que aqui no meu portfólio contém alguns PDF´s que me ajudaram a descobrir
 		 mais sobre tecnológia e acredito que pode ajudar você também a aprender mais sobre tecnológia e não só...
 		 </p>
-        
+        <br>
+		<p style=""><i>By: Miguel Luzolo</i></p>
       </div>
     </div>
   </section>
@@ -298,7 +322,7 @@ color:black;
  <div class="project-card2">
          
             
-      <img src="p1.png" height="auto" width="100px"> 
+      <img src="p1.png" height="auto" width="150px"> 
           
       <h4 style="text-align:center; margin-top:15px;">Lagin Page</h4>
       <p >Feito com HTML e CSS apenas na IU mais bastante profisssional com php cuidando do envio do formulário</p>  
@@ -312,7 +336,7 @@ color:black;
   <div class="project-card2">
          
             
-      <img src="p2.png" height="auto" width="100px"> 
+      <img src="p2.png" height="auto" width="150px"> 
           
       <h4 style="text-align:center; margin-top:15px;">E-commerce</h4>
       
@@ -325,7 +349,7 @@ color:black;
   <div class="project-card2">
          
             
-      <img src="p3.png" height="auto" width="100px"> 
+      <img src="p3.png" height="auto" width="150px"> 
           
       <h4 style="text-align:center; margin-top:15px;">Portal Educacional</h4>
       
@@ -354,20 +378,20 @@ color:black;
     <div class="project-grid">
       <!-- Especialidades-->
       <div class="project-card">
-        <h3>Front-End</h3>
+        <h3><i><u>Front-End</u></i></h3>
              <p>HTML</p>
 		 <p>JavaScript</p>
 		  <p>CSS</p>
               
       </div>
       <div class="project-card">
-        <h3>Back-End</h3>
+        <h3><i><u>Back-End</u></i></h3>
        <p>Python (Django e Flask)</p> 
 		<p>React.js</p> 
       </div>
 	  
 	   <div class="project-card">
-        <h3>Framworks</h3>
+        <h3><i><u>Framworks</u></i></h3>
         <p>React.js</p> 
 <p>Tailwid Css</p> 
 <p>Angular</p> 
@@ -377,7 +401,7 @@ color:black;
     
 	
 	<div class="project-card">
-        <h3>Banco  de dados</h3>
+        <h3><i><u>Banco  de dados</u></i></h3>
         <p>SQL</p> 
 <p>Firebase</p> 
 <p>MongoDB</p> 
@@ -393,7 +417,7 @@ color:black;
   </section>
 
 <section id="projects" class="projects">
-<h2 id="conteudo" >Alguns Conteúdos </h2> 
+<h1 id="conteudo" >Alguns Conteúdos </h1> 
  <div class="project-grid">
 
 
@@ -474,6 +498,7 @@ color:black;
 		
 		<br><br>
 		 <a href="Historia da eletrecidade.pdf" target="_blank" dowload>História da eletrecidade
+		 
 	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
 		
 		
@@ -491,8 +516,6 @@ color:black;
 </div><br>
 <center><p>Don´t Give Up</p></center>
   
-
-
 </section>
 
 
@@ -517,5 +540,3 @@ color:black;
   <script src="script.js"></script>
 </body>
 </html>
-
-
