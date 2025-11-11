@@ -4,11 +4,16 @@
   <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Miguel Dev</title>
-  <link rel="stylesheet" href="estilo.css" />
+<link rel="stylesheet" href="" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-
-:root {
+  
+  
+  
+  <style>
+  
+  
+  
+  :root {
   --primary: #4f46e5;
   --secondary: #6366f1;
   --dark: #0f172a;
@@ -78,6 +83,9 @@ body {
   color: #ffd700;
 }
 
+
+
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -101,6 +109,10 @@ body {
   padding: 4rem 2rem;
   gap: 2rem;
 }
+
+
+
+
 
 .about-image img {
   width: 150px;
@@ -132,6 +144,50 @@ body {
 }
 
 
+.projects2 {
+  background: white;
+  padding: 4rem 2rem;
+  text-align: center;
+
+}
+
+.project-grid2 {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+ overflow:auto;
+
+}
+
+.project-card2 {
+  background: var(--light);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+margin:5px;
+
+}
+
+.project-card2:hover {
+
+color: var(--light);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+
+background: var(--text);
+  
+
+
+
+
+}
+
+button:active{
+
+background:purple;
+
+}
+
 
 
 .contact {
@@ -161,13 +217,31 @@ color:black;
 
 
 }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </style>
+  
+  
+  
+  
 
-
-
-
-
-	
-</style>  
+   
+  
+  
 </head>
 <body>
   <header class="navbar">
@@ -213,8 +287,70 @@ color:black;
     </div>
   </section>
 
-  <section id="projects" class="projects">
-    <h2>Especialidades</h2>
+ 
+
+<section id="projects2" class="projects">
+ <h2>Projectos</h2>   
+	<p>Deslize para esquerda >> </p>
+<div class="project-grid2">
+     
+
+ <div class="project-card2">
+         
+            
+      <img src="p1.png" height="auto" width="150px"> 
+          
+      <h4 style="text-align:center; margin-top:15px;">Lagin Page</h4>
+      <p >Feito com HTML e CSS apenas na IU mais bastante profisssional com php cuidando do envio do formulário</p>  
+        
+      <button style="padding:6px 9px; border:none; border-radius:5px; box-shadow:0px 0px 4px rgba(0, 0, 0.1)"> <a href="#contacto">Contactar</a></button>
+
+ </div>
+ 
+ 
+ 
+  <div class="project-card2">
+         
+            
+      <img src="p2.png" height="auto" width="150px"> 
+          
+      <h4 style="text-align:center; margin-top:15px;">E-commerce</h4>
+      
+      <p >Um site de compras feito com html, css na parte visual e php,javascript no back-end entre outras linguagens</p>  
+       <button style="padding:6px 9px; border:none; border-radius:5px; box-shadow:0px 0px 4px rgba(0, 0, 0.1)"> <a href="#contacto">Contactar</a></button>
+
+ </div>
+ 
+ 
+  <div class="project-card2">
+         
+            
+      <img src="p3.png" height="auto" width="150px"> 
+          
+      <h4 style="text-align:center; margin-top:15px;">Portal Educacional</h4>
+      
+      <p >Um portal para aprendizagem, diversos temas inseridos, tanto o front-end e back-end com capacidade de atender o cliente</p>  
+     <button style="padding:6px 9px; border:none; border-radius:5px; box-shadow:0px 0px 4px rgba(0, 0, 0.1)"> <a href="#contacto">Contactar</a></button>
+
+ </div>
+
+
+ </div>
+	  
+
+</section>
+
+
+
+
+
+
+
+ <section id="projects" class="projects">
+    
+	
+	 
+	<h2>Especialidades</h2>
     <div class="project-grid">
       <!-- Especialidades-->
       <div class="project-card">
@@ -276,6 +412,12 @@ color:black;
 	  Baixar</button></a>
 		
 		
+		<br><br>
+		 <a href="Historia da Informatica.pdf" target="_blank" dowload>História da Informática
+		 <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">
+	  Baixar</button></a>
+		
+		
 		
 		<br><br>
 		 <a href="Linguagem_C.pdf" target="_blank" dowload>Linguagem C
@@ -308,11 +450,34 @@ color:black;
 	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
 		
 		
-		
 		<br><br>
-		 <a href="inovacoes_tecnologicas.pdf" target="_blank" dowload>Invenções Tecnológicas do séc. XIX
+		 <a href="Historia da eletronica.pdf" target="_blank" dowload>História da Eletrónica
 	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
 		
+		
+		
+	
+
+
+		</div>
+    
+	
+
+<div class="project-card">
+     <h3>PDF's Eletrecidade</h3> 
+	  <a href="Eletrecidade industrial.pdf" target="_blank" dowload>Eletrecidade indústrial
+	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
+		
+		<br><br>
+		 <a href="Invenções_Revolucionadas.pdf" target="_blank" dowload>Revoluções graças a eletrecidade
+	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
+		
+		<br><br>
+		 <a href="Historia da eletrecidade.pdf" target="_blank" dowload>História da eletrecidade
+	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
+		
+		
+	
 
 
 
@@ -323,15 +488,17 @@ color:black;
 	
 
 
+</div><br>
+<center><p>Don´t Give Up</p></center>
+  
 
 
-
-</div>
 </section>
 
 
+
   <section id="contact" class="contact">
-    <h2>Contato</h2>
+    <h2>Contacto <i class="fa fa-phone"></i></h2>
     <p>Quer falar comigo? Entra em contato comigo nas seguintes redes clicando nos links</p>
     <br>
 	<ul id="link">
@@ -343,10 +510,12 @@ color:black;
  </ul>
   </section>
 
-  <footer>
+  <footer id="contacto">
     <p>&copy; 2025 Miguel.dev</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
