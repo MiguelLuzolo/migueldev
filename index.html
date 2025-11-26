@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Miguel Luzolo Site</title>
+  <title>Miguel Luzolo</title>
 <link rel="stylesheet" href="" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -22,6 +23,8 @@
   --text: #1e293b;
 }
 
+
+ 
 * {
   margin: 0;
   padding: 0;
@@ -114,7 +117,6 @@ body {
 
 
 
-
 .about-image img {
   width: 150px;
   border-radius: 50%;
@@ -170,7 +172,7 @@ body {
 .project-card2:hover {
   background: var(--text);
   color: var(--light);
-  transform: translateY(-4px);
+  
 }
 
 /* Imagem */
@@ -186,15 +188,17 @@ body {
 @media (max-width: 768px) {
   .project-grid2 {
     display: flex;
-    overflow-x: auto;
+	overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 1rem;
+    gap: 2rem;
     padding-bottom: 1rem;
   }
 
   .project-card2 {
     flex: 0 0 80%;
     scroll-snap-align: start;
+	margin:10px;
+	border-radius:20px;
   }
 
   /* Remove barra de scroll feia */
@@ -216,9 +220,10 @@ background:purple;
 .contact {
   background: var(--dark);
   color: white;
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
 list-type-style:none;
-  }
+text-align:center; 
+ }
 
 footer {
   background: #0b0e1a;
@@ -241,27 +246,52 @@ color:black;
 
 }
   
+.fa {
+	margin:3px;
+  padding: 15px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+border-radius:50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+}
+
+/* envelope */
+.fa-envelope {
+  background:white; 
+  color: red;
+}
+
+.fa-instagram{
+  background: #ea4c89;
+  color: white;
+}  
+ 
+ 
+  meter{
   
   
+  height:px;
+  position:static !important;
+  
+  }
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </style>
-  
-  
-  
-  
-<script type="module">
+  <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
@@ -286,12 +316,30 @@ color:black;
 </script>   
   
   
+  
+  
+  
+  
+  
+  
+  </style>
+  
+  
+  
+  
+
+   
+  
+  
 </head>
 <body>
+  
   <header class="navbar">
-    
+       <div style="margin-left:-30px;" class="Logo" >Miguel </div>
     <nav>
-      <ul>
+ 
+	<ul>
+	  
         <li><a href="#about">Sobre</a></li>
         <li><a href="#conteudo">Conteúdos</a></li>
         <li><a href="#contact">Contato</a></li>
@@ -377,6 +425,7 @@ color:black;
       <p >Um portal para aprendizagem, diversos temas inseridos, tanto o front-end e back-end com capacidade de atender o cliente</p>  
      <button style="padding:6px 9px; border:none; border-radius:5px; box-shadow:0px 0px 4px rgba(0, 0, 0.1)"> <a href="#contacto">Contactar</a></button>
 
+
  </div>
 
 
@@ -384,10 +433,6 @@ color:black;
 	  
 
 </section>
-
-
-
-
 
 
 
@@ -400,33 +445,35 @@ color:black;
       <!-- Especialidades-->
       <div class="project-card">
         <h3><i><u>Front-End</u></i></h3>
-             <p>HTML</p>
-		 <p>JavaScript</p>
-		  <p>CSS</p>
+         <p>HTML        <meter  style="margin-left:25px; margin-top:20px;" value="95" max="100"></meter> 95%</p>
+		 <p>CSS          <meter style="margin-left:35px;" value="80" max="100"></meter> 80%</p>
+		 <p>javascript <meter value="52" max="100"></meter> 52%</p>
               
       </div>
       <div class="project-card">
-        <h3><i><u>Back-End</u></i></h3>
-       <p>Python (Django e Flask)</p> 
-		<p>React.js</p> 
-      </div>
+        <h3><i><u>Linguagens de programação</u></i></h3>
+        <p>Python       <meter  style="margin-left:10px; margin-top:20px;" value="75" max="100"></meter> 75%</p>
+		 <p>C		 <meter style="margin-left:50px;" value="60" max="100"></meter> 60%</p>
+		 <p>PHP <meter style="margin-left:30px;" value="52" max="100"></meter> 52%</p>
+              
+	  </div>
 	  
 	   <div class="project-card">
         <h3><i><u>Framworks</u></i></h3>
-        <p>React.js</p> 
-<p>Tailwid Css</p> 
-<p>Angular</p> 
-
-		
+       
+	   <p>Tailwid        <meter  style="margin-left:25px; margin-top:20px;" value="95" max="100"></meter> 95%</p>
+		 <p>Bootstrap          <meter style="margin-left:5px;" background-color:blue;" value="80" max="100"></meter> 80%</p>
+		 <p>Bulma <meter style="margin-left:25px;" value="52" max="100"></meter> 52%</p>
+             
       </div>
     
 	
 	<div class="project-card">
         <h3><i><u>Banco  de dados</u></i></h3>
-        <p>SQL</p> 
-<p>Firebase</p> 
-<p>MongoDB</p> 
-
+        <p>Firebase        <meter  style="margin-left:25px; margin-top:20px;" value="85" max="100"></meter> 85%</p>
+		<p>MongoDB               <meter style="margin-left:15px;" value="80" max="100"></meter> 80%</p>
+		<p>SQL      <meter style="margin-left:55px;" value="52" max="100"></meter> 52%</p>
+             
 		
       </div>
       
@@ -436,6 +483,8 @@ color:black;
 	
 	</div>
   </section>
+
+
 
 <section id="projects" class="projects">
 <h1 id="conteudo" >Alguns Conteúdos </h1> 
@@ -535,29 +584,39 @@ color:black;
 
 
 </div><br>
-<center><p>Don´t Give Up</p></center>
-  
+<br>
+
+
+<br>
+<p style="font-weight:bold;"><i>Don´t Give Up</i></p>
+<p>By: <i>Miguel Luzolo</i></p>
+
+
 </section>
 
 
 
+
   <section id="contact" class="contact">
-    <h2>Contacto <i class="fa fa-phone"></i></h2>
-    <p>Quer falar comigo? Entra em contato comigo nas seguintes redes clicando nos links</p>
-    <br>
-	<ul id="link">
-      <li class="fa fa-envelope" ><a style="color:white; margin-left:5px;" href="mailto:miguelluzolo5@gmail.com" targent="_blank">  miguelluzolo5@gmail.com</a></li>
-      <br>
-	  <li  class="fa fa-facebook" ><a style="color:white; margin-left:10px;"  href="https://web.facebook.com/miguel.luzolo.oficial" targent="_blank">Mi Guel</a></li>  
-       <br>
-	   <li class="fa fa-instagram"> <a style="color:white; margin-left:5px;" href="https://www.instagram.com/miguel_luzolo_oficial.08/" targent="_blank">miguel_luzolo_oficial.08</a></li>
- </ul>
+   
+   <h2>Contacta-me<i></i></h2>
+   <br>
+   <div>
+	<ul> 
+	 <a href="https://web.facebook.com/miguel.luzolo.oficial" target="_blank" class="fa fa-facebook"></a>
+     <a href="mailto:miguelluzolo5@gmail.com" target="_blank" class="fa fa-envelope"></a>
+<a href="https://www.instagram.com/miguel_luzolo_oficial.08/" target="_blank" class="fa fa-instagram"></a>
+
+	</ul>
+	</div>
   </section>
 
   <footer id="contacto">
-    <p>&copy; 2025 Miguel.dev</p>
+    <p>&copy; 2025 Miguel Luzolo Dev</p>
   </footer>
 
-  <script src="script.js"></script>
+  
+
+
 </body>
 </html>
