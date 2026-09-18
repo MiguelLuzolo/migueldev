@@ -1,787 +1,417 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html  >
 <head>
-  <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v6.1.12, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo1.png" type="image/x-icon">
+  <meta name="description" content="Portfólio Miguel Luzolo">
+  
+  
   <title>Miguel Luzolo</title>
-
-<link rel="icon" href="caminho/do/seu/favicon.ico" type="i.ipng">
-
-
-<link rel="stylesheet" href="" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=vcqYh8"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=vcqYh8" type="text/css">
 
   
-  
-  <style>
-  
-  
-  
-  :root {
-  --primary: #4f46e5;
-  --secondary: #6366f1;
-  --dark: #0f172a;
-  --light: #f1f5f9;
-  --text: #1e293b;
-  --miguel:skyblue;
-}
-
-
-
-
-
- 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type:none;
-}
-
-a{
-  list-style-type:none;
-  justify-items:none;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: var(--light);
-  color: var(--text);
-  line-height: 1.6;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 3rem;
-   background: var(--dark);
-  color: white;
-  position: sticky;
-  top: 0;
-  
-}
-
-.navbar ul {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.navbar a:hover {
-  color: var(--secondary);
-}
-
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-  background: var(--dark);
-  color: white;
-  text-align: center;
-  padding: 0 1rem;
-}
-
-.hero h1 span {
-  color: #ffd700;
-}
-
-	
-  #fotos{
-  
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  
-  
-  
-  }
-
-
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background: white;
-  color: var(--dark);
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #ddd;
-}
-
-.about .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 4rem 2rem;
-  gap: 2rem;
-}
-
-
-
-
-.about-image img {
-  width: 150px;
-  border-radius: 50%;
-  border: 4px solid var(--dark);
-}
-
-
-.projects {
-  background: white;
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.project-card {
-  background: var(--light);
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
- }
- 
- 
- .projects2 {
-  background: white;
-  padding: 3rem 1.5rem;
-  text-align: center;
-}
-
-/* GRID no desktop */
-.project-grid2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-/* Cards */
-.project-card2 {
-  background: var(--light);
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-  transition: all 0.3s ease;
-  flex: 0 0 80%; /* usado no mobile */
-}
-
-.project-card2:hover {
-  background: var(--text);
-  color: var(--light);
-  
-}
-
-/* Imagem */
-.project-card2 img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-/* --- MOBILE MAGIC --- */
-@media (max-width: 768px) {
-  .project-grid2 {
-    display: flex;
-	overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 2rem;
-    padding-bottom: 1rem;
-  }
-
-  .project-card2 {
-    flex: 0 0 80%;
-    scroll-snap-align: start;
-	margin:10px;
-	border-radius:20px;
-  }
-
-  /* Remove barra de scroll feia */
-  .project-grid2::-webkit-scrollbar {
-    display: none;
-  }
-}
-
- 
- 
- button:active{
-
-background:purple;
-
-}
-
-
-
-.contact {
-  background: var(--dark);
-  color: white;
-  padding: 2rem 1rem;
-list-type-style:none;
-text-align:center; 
- }
-
-footer {
-  background: #0b0e1a;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
-
-/* 📱 Responsividade */
-@media (max-width: 768px) {
-  .about .container {
-    flex-direction: column;
-  }
-}
-
-a{ 
-text-decoration:none;
-color:black;
-
-
-}
-  
-.fa {
-	margin:3px;
-  padding: 15px;
-  font-size: 20px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-border-radius:50%;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-
-}
-
-/* envelope */
-.fa-envelope {
-  background:white; 
-  color: red;
-}
-
-.fa-instagram{
-  background: #ea4c89;
-  color: white;
-}  
- 
- 
-  meter{
-  
-  
-  height:px;
-  position:static !important;
-  
-  }
-  
- #but{
- 
- 
- padding:10px 10px;
- border-radius:10px;
- border:none;
- background:var(--dark);
- color:white;
- font-weight:bold;
- 
- } 
-  
-  #buttt{
-  
-  padding:7px 70px;
-  margin-top:20px;
-  border-radius:15px;
-  outline:none;
-  border:none;
-  background: var(--dark);
-  color:white;
-  box-shadow:0px 0px 5px rgba(0,0,0.1);
-  }
-  
-  
-  #buttt:active{
-  
-  background:white;
-  color:var(--dark);
-  box-shadow:0px 0px 5px rgba(0,0,0.1);
-  }
-  
-  <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAk_y7X8R5dbKSwwWWhAPWohlOUstD7whs",
-    authDomain: "meusite-b44b1.firebaseapp.com",
-    projectId: "meusite-b44b1",
-    storageBucket: "meusite-b44b1.firebasestorage.app",
-    messagingSenderId: "1044750478292",
-    appId: "1:1044750478292:web:a2353c72cde603cf684441",
-    measurementId: "G-WY6XCTD4XW"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>   
-  
-  
-  
-  
-  
-  
-  
-  
-  </style>
-  
-  
-  
-  
-
-   
   
   
 </head>
 <body>
   
-  <header class="navbar">
-       <div style="margin-left:-30px;" class="Logo" >Miguel </div>
-    <nav>
- 
-	<ul>
-	  
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#conteudo">Conteúdos</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
+  <section data-bs-version="5.1" class="menu menu1 cid-vvtOW7JBRl" once="menu" id="menu1-5">
+    
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo1.png" alt="Mobirise Website Builder" style="height: 3rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-primary display-7" href="index.html">Miguel Luzolo<br></a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-primary display-4" href="index.html#list01-13"><span class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link link text-primary display-4" href="index.html#features04-c"><span class="mbrib-briefcase mbr-iconfont mbr-iconfont-btn"></span>
+                            Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link link text-primary display-4" href="index.html#social04-a"><span class="mobi-mbri mobi-mbri-user mbr-iconfont mbr-iconfont-btn"></span>Contactos</a>
+                    </li></ul>
+                
+                
+            </div>
+        </div>
     </nav>
-  </header>
+</section>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Olá, eu sou Miguel</h1>
-      <p>Desenvolvedor <strong>Front-End / Back-End / Full Stack</strong></p>
-      <a href="#projects" class="btn">Explorar o site</a>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="container">
-      <div class="about-image">
-        <!-- 🧍 Espaço para a tua foto -->
-        <center><img src="Luzolo.jpg" alt="Minha foto" /></center>
-		<center><h3>Miguel Luzolo</h3></center>
-      </div>
-      <div class="about-text">
-        <h2>Sobre Mim</h2>
-        <p>
-          <!-- descrição pessoal -->
-          Sou Miguel Luzolo um desenvolvedor apaixonado por tecnologia, sempre em busca de novos desafios e oportunidades para aprender. &#128512
-        </p>
-	 <br>
-		<p>
-          <!-- descrição pessoal -->
-         Também conhecido como "Ice Kid" sou um rapaz que gosta de ensinar conteúdos de TI para os outros. Por isso que aqui no meu portfólio contém alguns PDF´s que me ajudaram a descobrir
-		 mais sobre tecnológia e acredito que pode ajudar você também a aprender mais sobre tecnológia e não só...
-		 </p>
-        <br>
-		<p style=""><i>By: Miguel Luzolo</i></p>
-		<br><br>
-		
-        <h3>Informatica Site</h3>
-	    <p>Um dos meus sites feito especialmente para Informática, clica no botão abaixo e acessa já!</p>
-	    
-		<a href="brevemente.html"><button id="buttt">Entrar</button></a>
-	
- 
-	 </div>
-    
-	</div>
-  </section>
-
- 
-
-<section id="projects2" class="projects">
- <h2>Projectos</h2>   
-	<p>Deslize para esquerda >> </p>
-<div class="project-grid2">
-     
-
- <div class="project-card2">
-         
-            
-      <img src="captura1.png" height="auto" width="150px"> 
-          
-      <h4 style="text-align:center; margin-top:15px;">Informatica Site</h4>
-      <p >Um site onde você adquire varios conteúdos de informática para a sua jornada de aprendizagem na área</p>  
+<section data-bs-version="5.1" class="header16 cid-vvtKnSoYw5 mbr-fullscreen" id="header17-3">
+  
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="content-wrap col-12 col-md-12">
+        <h4 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-2"><strong>&lt;/Olá, Sou o Miguel&gt;</strong></h4>
         
-		<br>
-      <button  style="padding:10px 25px; border:none; border-radius:5px; box-shadow:0px 0px 4px rgba(0, 0, 0.1)"> <a href="brevemente.html">Entrar</a></button>
-
- </div>
- 
- 
- 
-  <div class="project-card2">
-         
-            
-      <img src="p2.png" height="auto" width="150px"> 
-          
-      <h4 style="text-align:center; margin-top:15px;">E-commerce</h4>
-      
-      <p >Um site de compras feito com html, css na parte visual e php,javascript no back-end entre outras linguagens</p>  
-      <br>
-	  <button style="padding:10px 25px; ; border:none; border-radius:5px; box-shadow:0px 0px 4px rgba(0, 0, 0.1)"> <a href="#contacto">Contactar</a></button>
-
- </div>
- 
- 
-  <div class="project-card2">
-         
-            
-      <img src="p3.png" height="auto" width="150px"> 
-          
-      <h4 style="text-align:center; margin-top:15px;">Portal Educacional</h4>
-      
-      <p >Um portal para aprendizagem, diversos temas inseridos, tanto o front-end e back-end com capacidade de atender o cliente</p>  
-<br>    
-	<button style="padding:10px 25px;  border:none; border-radius:5px; box-shadow:0px 0px 4px rgba(0, 0, 0.1)"> <a href="#contacto">Contactar</a></button>
-
-
- </div>
-
-
- </div>
-	  
-
-</section>
-
-
-
- <section id="projects" class="projects">
-    
-	
-	 
-	<h2>Especialidades</h2>
-    <div class="project-grid">
-      <!-- Especialidades-->
-      <div class="project-card">
-        <h3><i><u>Front-End</u></i></h3>
-         <p>HTML</p>
-		 <p>CSS </p>
-		 <p>javascript </p>
-              
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">Entre e veja os serviços e destaques do meu portfólio não perca mais tempo.&nbsp;</p>
+        <div class="mbr-section-btn"><a class="btn btn-white display-7" href="index.html#image1-2">Ver Mais<span class="mbri-down mbr-iconfont mbr-iconfont-btn"></span></a></div>
       </div>
-      <div class="project-card">
-        <h3><i><u>Linguagens de programação</u></i></h3>
-        <p>Python </p>
-		 <p>C</p>
-		 <p>PHP</p>
-              
-	  </div>
-	  
-	   <div class="project-card">
-        <h3><i><u>Framworks</u></i></h3>
-       
-	   <p>Tailwid</p>
-		 <p>Bootstrap</p>
-		 <p>Bulma</p>
-             
-      </div>
-    
-	
-	<div class="project-card">
-        <h3><i><u>Banco  de dados</u></i></h3>
-        <p>Firebase </p>
-		<p>MongoDB</p>
-		<p>SQL </p>
-             
-		
-      </div>
-      
-	 
-    
-
-	
-	</div>
-  </section>
-
-   <section class="projects">
-	<h2 id="serviços">Serviços Informáticos</h2>
-   
-   
-
-    <div class="project-grid">
-	
-
-	
-	
-	<div  style="border:2px solid var(--dark); padding:2rem; border-radius:20px;">
-	
-	<h3>Crição de sites<hr color="black"></h3>
-	<br>
-	<p style="padding:5px;">Se deseja ter um site pessoal ou para o seu negócio.</p>
-	
-	<p style="margin-top:15px;">Não perca mais tempo! clica abaixo.</p>
-	<br>
-	
-	<center><a  href="https://wa.me/244946093351" ><button id="but" >Entrar em contacto no WhatsApp</button></a></center>
-	
-	</div>
-	
-    
-	
-	
-	<div  style="border:2px solid var(--dark); padding:2rem; border-radius:20px;">
-	
-	<h3>Aulas Online<hr color="black"></h3>
-	<br>
-	<p >Aulas Online: </p>
-	<p >1-Programação Web </p>
-	<p >2-Lógica de Programação(Algoritmos) </p>
-	<p >3-Programação C </p>
-	<p >4-Programação Python </p>
-  
-  
-  
-  
-    <br>
-	
-	<center ><a  href="https://wa.me/244946093351"><button id="but">Entrar em contacto no WhatsApp</button></a></center>
-	
-	</div>
-	
-    
-	
-
-	
-    
-
-	
-	
-
-	
-	
-	
     </div>
-
-
-
-
-
-
-
-
-	</section> 	
-
-
-<section id="projects" class="projects">
-<h1 id="conteudo" >Alguns Conteúdos </h1> 
- <div class="project-grid">
-
-
-	<div class="project-card">
-	
-	
-	
-	<img id="fotos" src="segurança.jpg">
-	
-	
-	<h4 style="margin-bottom:10px;">Segurança Digital<hr color="black"></h4>
-	
-	<p stylpi.jpge="padding:5px;">Segurança digital é muito importantisssimo venha e aprenda como proteger seus dados virtualmente, Acessa já o conteúdo</p>
-	<br>
-	
-	<center><a href="#"><button id="but" >Baixar</button></a></center>
-	
-	</div>
-	
-
-	<div class="project-card">
-	
-	
-	
-	<img id="fotos" src="logica.png">
-	
-	<h4 style="margin-bottom:10px;">Lógica de Programação<hr color="black"></h4>
-	
-	<p">Um livros que aborda sobrea a Linguagem C, e que vai ajudar muito na sua jornada de aprendizado na linguagem</p>
-	<br>
-	
-	<center><a href="#"><button id="but" >Baixar</button></a></center>
-	
-	</div>
-
-
-<div class="project-card">
-     <h3  >PDF's Informática</h3> 
-	  <a href="Uma Jornada Pela Inteligência Artificial.pdf" target="_blank" dowload>Sobre IA
-	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
-		
-		<br><br>
-		 <a href="Redes.pdf" target="_blank" dowload>Redes de Computadores
-	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
-		
-		<br><br>
-		 <a href="logica-de-programacao-para-iniciantes.pdf" target="_blank" dowload>Logica de Programação
-	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">
-	  Baixar</button></a>
-		
-		
-		<br><br>
-		 <a href="Historia da Informatica.pdf" target="_blank" dowload>História da Informática
-		 <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">
-	  Baixar</button></a>
-		
-		
-		
-		<br><br>
-		 <a href="Linguagem_C.pdf" target="_blank" dowload>Linguagem C
-	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
-		
-
-
-
-
-
-		</div>
-
-
-
-
-
-
-
-<div class="project-card">
-     <h3>PDF's Eletrónica </h3> 
-	  <a href="Fundamentos_da_Electronica.pdf" target="_blank" dowload>Fundamentos da eletrónica
-	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
-		
-		<br><br>
-		 <a href="Circuitos_e_Sistemas_Digitais.pdf" target="_blank" dowload>Circuitos e Sistemas Digitais
-	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
-		
-		<br><br>
-		 <a href="Eletronica-Analogica.pdf" target="_blank" dowload>Eletrónica Analógica
-	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
-		
-		
-		<br><br>
-		 <a href="Historia da eletronica.pdf" target="_blank" dowload>História da Eletrónica
-	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
-		
-		
-		
-	
-
-
-		</div>
-    
-	
-
-<div class="project-card">
-     <h3>PDF's Eletrecidade</h3> 
-	  <a href="Eletrecidade industrial.pdf" target="_blank" dowload>Eletrecidade indústrial
-	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
-		
-		<br><br>
-		 <a href="Invenções_Revolucionadas.pdf" target="_blank" dowload>Revoluções graças a eletrecidade
-	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
-		
-		<br><br>
-		 <a href="Historia da eletrecidade.pdf" target="_blank" dowload>História da eletrecidade
-		 
-	  <button style="padding:5px 5px; margin-left:5px; border:none; box-shadow:0px 0px 3px #555; border-radius:8px;">Baixar</button></a>
-		
-		
-	
-
-
-
-
-
-		</div>
-    
-	
-
-
-</div><br><br>
-
-<h3>Informatica Site</h3>
-	    <p>Um dos meus sites feito especialmente para Informática, clica no botão abaixo e acessa já!</p>
-	    
-		<a href="brevemente.html"><button id="buttt">Entrar</button></a>
-
-
-<br><br>
-<p style="font-weight:bold;"><i>Don´t Give Up</i></p>
-<p>By: <i>Miguel Luzolo</i></p>
-
-
+  </div>
 </section>
 
+<section data-bs-version="5.1" class="image1 cid-vvtDBlALGm" id="image1-2">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+                <div class="image-wrapper">
+                    <img src="assets/images/img-20240820-wa00031-2.jpeg" alt="Mobirise Website Builder">
+                    <p class="mbr-description mbr-fonts-style pt-2 align-center display-4"><strong>Miguel Luzolo</strong></p>
+                </div>
+            </div>
+            <div class="col-12 col-lg">
+                <div class="text-wrapper">
+                    
+                    <p class="mbr-text mbr-fonts-style display-7">Sou o Miguel Luzolo, especialista em T.I, desenvolvedor web, Mobile. Cyberseguraça, Redes e Hardware.&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="counter1 counters cid-vvz4UHO2Xy" id="counter1-12">
+	
+
+	
+	
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-12 content-head">
+				<div class="card-wrapper mb-5">
+					<div class="card-box align-center">
+						<h4 class="mbr-section-title mbr-fonts-style mb-0 display-2"><strong>Estado</strong></h4>
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row content-row mt-4">
+			<div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb active">
+				<div class="item-wrapper">
+					<div class="title mb-3">
+						<h3 class="count mbr-fonts-style display-1">+15</h3>
+					</div>
+					<h4 class="card-title mbr-fonts-style display-5"><strong>Projetos&nbsp;Pessoais</strong></h4>
+					<p class="mbr-text card-text mbr-fonts-style mb-0 display-7">Projetos para fins&nbsp;educacionais para&nbsp;<br>aprendizado em informática.<br><br></p>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+				<div class="item-wrapper">
+					<div class="title mb-3">
+						<h3 class="count mbr-fonts-style display-1">+10&nbsp;</h3>
+					</div>
+					<h4 class="card-title mbr-fonts-style display-5">
+						<strong>Projectos concluidos</strong></h4>
+					<p class="mbr-text card-text mbr-fonts-style mb-0 display-7">
+						Bringing dreams to life with 150+ successful projects, turning ideas into real-world results.
+					</p>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+				<div class="item-wrapper">
+					<div class="title mb-3">
+						<h3 class="count mbr-fonts-style display-1">+100
+						</h3>
+					</div>
+					<h4 class="card-title mbr-fonts-style display-5">
+						<strong>Clientes&nbsp;Satisfeitos</strong></h4>
+					<p class="mbr-text card-text mbr-fonts-style mb-0 display-7">
+						Over a decade, we've earned trust, leaving more than 300 clients with smiles and success.
+					</p>
+				</div>
+			</div>
 
 
-
-  <section id="contact" class="contact">
-   
-   <h2>Contacta-me<i></i></h2>
-   <br>
-   <div>
-	<ul> 
-	 <a href="https://web.facebook.com/miguel.luzolo.oficial" target="_blank" class="fa fa-facebook"></a>
-     <a href="mailto:miguelluzolo5@gmail.com" target="_blank" class="fa fa-envelope"></a>
-<a href="https://www.instagram.com/miguel_luzolo_oficial.08/" target="_blank" class="fa fa-instagram"></a>
-
-	</ul>
+		</div>
 	</div>
-  </section>
+</section>
 
-  <footer id="contacto">
-    <p>&copy; 2026 Miguel Luzolo Dev</p>
-  </footer>
+<section data-bs-version="5.1" class="features4 start cid-vvtUYi5dMJ" id="features04-c">
+	
+	
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 content-head">
+				<div class="mbr-section-head mb-5">
+					<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Serviços</strong></h4>
+					
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="item features-image col-12 col-md-6 col-lg-4 active">
+				<div class="item-wrapper">
+					<div class="item-img">
+						<img src="assets/images/29ea7b408360524da8c7a97e16ec437a.jpeg" alt="Mobirise Website Builder" data-slide-to="0" data-bs-slide-to="0">
+					</div>
+					<div class="item-content">
+						<h5 class="item-title mbr-fonts-style display-5"><strong>Programação</strong></h5>
+						<p class="mbr-text mbr-fonts-style display-7">Serviços de programação, especialidades em Python, C,<br>C++, Kotlin.&nbsp;&nbsp;<strong>&nbsp;</strong><br></p>
+						<div class="mbr-section-btn item-footer"><a href="chat.html#form03-t" class="btn item-btn btn-primary display-7" target="_blank">Chat</a></div>
+					</div>
 
+				</div>
+			</div><div class="item features-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="item-img">
+						<img src="assets/images/c7fdc22fed8719c5c372a488df722fb7.jpeg" alt="Mobirise Website Builder" data-slide-to="1" data-bs-slide-to="1">
+					</div>
+					<div class="item-content">
+						<h5 class="item-title mbr-fonts-style display-5"><strong>Redes</strong></h5>
+						<p class="mbr-text mbr-fonts-style display-7">Configuração de Roteador, Switch<br>cabeamento, redes Lan, FilleZilla.</p>
+						<div class="mbr-section-btn item-footer"><a href="chat.html#form03-t" class="btn item-btn btn-primary display-7">Chat</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="item features-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="item-img">
+						<img src="assets/images/7e8d303eaf468371574ba31c09c6d447.jpeg" alt="Mobirise Website Builder" data-slide-to="1" data-bs-slide-to="1">
+					</div>
+					<div class="item-content">
+						<h5 class="item-title mbr-fonts-style display-5"><strong>Cibersegurança</strong></h5>
+						<p class="mbr-text mbr-fonts-style display-7">Instalação de VPN´s Corporativos, Configuração Backup, Sistemas operativos.</p>
+						<div class="mbr-section-btn item-footer"><a href="chat.html#form03-t" class="btn item-btn btn-primary display-7">Chat</a></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
 
+<section data-bs-version="5.1" class="slider2 cid-vvw3BR1RxS" id="slider2-y">
+    
 
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="carousel slide" id="vvALpGUMvK" data-ride="carousel" data-bs-ride="carousel" data-interval="5000" data-bs-interval="5000">
+                    <ol class="carousel-indicators">
+                        <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#vvALpGUMvK" data-bs-target="#vvALpGUMvK"></li>
+                        <li data-slide-to="1" data-bs-slide-to="1" data-target="#vvALpGUMvK" data-bs-target="#vvALpGUMvK"></li>
+                        <li data-slide-to="2" data-bs-slide-to="2" data-target="#vvALpGUMvK" data-bs-target="#vvALpGUMvK"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item slider-image item active">
+                            <div class="item-wrapper">
+                                
+                                <img class="d-block w-100" src="assets/images/ice-720x1612.png" alt="Mobirise Website Builder">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Ice-Tech</strong></h5>
+                                    <p class="mbr-section-text mbr-fonts-style display-7"><strong>App e Site voltado para fins educacionais <br>relacionado a informática</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item slider-image item">
+                            <div class="item-wrapper">
+                                
+                                <img class="d-block w-100" src="assets/images/p-736x417.png" alt="Mobirise Website Builder">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>Ice &amp; Progresso</strong></h5>
+                                    <p class="mbr-section-text mbr-fonts-style display-7">App e site voltado para fins educacionais<br>para filosófia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item slider-image item">
+                            <div class="item-wrapper">
+                                
+                                <img class="d-block w-100" src="assets/images/image-8f3e3e24-720x720.jpg" alt="Mobirise Website Builder">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="mbr-section-subtitle mbr-fonts-style display-5"><strong>TECHNICAL</strong></h5>
+                                    <p class="mbr-section-text mbr-fonts-style display-7">
+                                        BREVEMENTE!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#vvALpGUMvK">
+                        <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
+                        <span class="sr-only visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#vvALpGUMvK">
+                        <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
+                        <span class="sr-only visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="list1 cid-vvz4WG0zDB" id="list01-13">	
+    
+	
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-10 m-auto">
+				<div class="content">
+					<div class="row justify-content-center mb-5">
+						<div class="col-12 content-head">
+							<div class="mbr-section-head">
+								<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Sobre</strong></h4>
+								
+							</div>
+						</div>
+					</div>
+					<div id="bootstrap-accordion_6" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+						<div class="card">
+							<div class="card-header" role="tab" id="headingOne">
+								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_6" aria-expanded="false" aria-controls="collapse1">
+									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Como posso contactar o Miguel Luzolo?</h6>
+									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+								</a>
+							</div>
+							<div id="collapse1_6" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_6">
+								<div class="panel-body">
+									<p class="mbr-fonts-style panel-text display-7">Para contactar o Miguel Luzolo é muito simples basta ir a secção de contatos e clicar em um dos ícones e serás redirecionado até ao meu perfil, ou ir a secção de serviços e clicar no botão Chat.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingOne">
+								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_6" aria-expanded="false" aria-controls="collapse2">
+									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">E os preços dos sites?
+									</h6>
+									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+								</a>
+							</div>
+							<div id="collapse2_6" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_6">
+								<div class="panel-body">
+									<p class="mbr-fonts-style panel-text display-7">Para sites simples os preços variam de 50.000kz à 70.000kz<br>Para sites complexos os preços variam de 100.000kz à 250.000kz<br><br>Obs: os preços são mesmos para qualquer área de atuação</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingOne">
+								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_6" aria-expanded="false" aria-controls="collapse3">
+									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Da para transformar o meu site em aplicativo?</h6>
+									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+								</a>
+							</div>
+							<div id="collapse3_6" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_6">
+								<div class="panel-body">
+									<p class="mbr-fonts-style panel-text display-7">Sim da para transformar o seu site em aplicativo. <br>Para você que quer elevar o seu negócio para um o outro nível transformando o seu site em um aplicativo para que as pessoas possam fazer Download e acessar os serviços de forma direta sem pesquisar mas num navegador, aí aplicam algumas taxas adicionais.&nbsp;</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingOne">
+								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_6" aria-expanded="false" aria-controls="collapse4">
+									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">O meu site vai aparecer na internet?
+									</h6>
+									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+								</a>
+							</div>
+							<div id="collapse4_6" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_6">
+								<div class="panel-body">
+									<p class="mbr-fonts-style panel-text display-7">Sim o seu site vai aparecer na internet e as pessoas vão poder pesquisar e navegar nela!</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingOne">
+								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_6" aria-expanded="false" aria-controls="collapse5">
+									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">O site não vai sair do ar?
+									</h6>
+									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+								</a>
+							</div>
+							<div id="collapse5_6" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_6">
+								<div class="panel-body">
+									<p class="mbr-fonts-style panel-text display-7">O site não vai sair do ar em condições normais a não ser que queiras tirar do ar!</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingOne">
+								<a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse6_6" aria-expanded="false" aria-controls="collapse6">
+									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Preciso pagar hopedagem?
+									</h6>
+									<span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+								</a>
+							</div>
+							<div id="collapse6_6" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_6">
+								<div class="panel-body">
+									<p class="mbr-fonts-style panel-text display-7">Isso depende do cliente que consultar o serviço para quem quiser uma hospedagem gratuita pode ter este privilégio mas terá um domínio com o nome do serviço de hospedagem! já quem quiser pagar um serviço de hospedagem poderá ter domínios personalizados como o .com etc.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="social4 cid-vvtRFVHna5" id="social04-a">
+    
+    
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12">
+                <h1 class="mbr-section-title align-center mb-5 mbr-fonts-style display-2"><strong>Contactos</strong></h1>
+                <div class="social-list align-center">
+                    <a class="iconfont-wrapper bg-facebook m-2 " target="_blank" href="https://www.facebook.com/miguel.luzolo.oficial">
+                        <span class="socicon-facebook socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-twitter m-2" href="chat.html" target="_blank">
+                        <span class="mbrib-responsive"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-instagram m-2" href="https://www.instagram.com/miguel_luzolo_oficial.08?stkn=MXR3NjBhNTA0YXU2aQ==" target="_blank">
+                        <span class="socicon-instagram socicon"></span>
+                    </a>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;   background-color:rgb(30, 172, 255);  align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/5132994" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt=" Free Web  Builder Software" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7"> &#8204;</p><a style="z-index:1" href="https://mobirise.com/website-maker.html"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/viewportchecker/viewportchecker.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
 </body>
 </html>
